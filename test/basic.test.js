@@ -12,4 +12,11 @@ describe('basic test', () => {
     });
     expect(stats.toJson().modules[6].source).toMatchSnapshot();
   });
+
+  test('module option', async () => {
+    const stats = await compiler('./fixtures/reactComponent.tsx', {
+      loaderOptions: { module: 'commonjs' }
+    });
+    expect(stats.toJson().modules[6].source).toMatchSnapshot();
+  });
 });

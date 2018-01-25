@@ -38,7 +38,7 @@ export default function loader(source) {
   const props = parse(this.resourcePath);
 
   if (options.module === 'commonjs') {
-    return `${source}\nmodule.exports.${name} = \`${props}\``;
+    return `${source}\nmodule.exports.${name} = ${JSON.stringify(props)}`;
   }
 
   return `${source}\nexport var ${name} = ${JSON.stringify(props)}`;

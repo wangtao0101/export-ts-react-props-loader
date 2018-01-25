@@ -1,6 +1,6 @@
 {
   "name": "export-ts-react-props-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "export props doc from typescript source code generatered by react-docgen-typescript as a variable",
   "main": "dist/index.js",
   "scripts": {
