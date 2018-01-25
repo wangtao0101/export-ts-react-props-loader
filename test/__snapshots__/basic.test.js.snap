@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic test basic loader 1`] = `
+"var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+import * as React from 'react';
+/**
+ * My name is Test
+ */
+var Test = /** @class */ (function (_super) {
+    __extends(Test, _super);
+    function Test() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Test.prototype.render = function () {
+        return (React.createElement(\\"div\\", null, \\"aaa\\"));
+    };
+    Test.defaultProps = {
+        text: 'text',
+    };
+    return Test;
+}(React.PureComponent));
+export default Test;
+export var componentProps = [{ \\"description\\": \\"My name is Test\\", \\"displayName\\": \\"reactComponent\\", \\"props\\": { \\"visible\\": { \\"defaultValue\\": null, \\"description\\": \\"\`visible\\", \\"name\\": \\"visible\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"boolean\\" } }, \\"text\\": { \\"defaultValue\\": { \\"value\\": \\"text\\" }, \\"description\\": \\"text\\", \\"name\\": \\"text\\", \\"required\\": false, \\"type\\": { \\"name\\": \\"string | undefined\\" } } } }];
+"
+`;
+
+exports[`basic test configFile option 1`] = `
+"var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+import * as React from 'react';
+/**
+ * My name is Test
+ */
+var Test = /** @class */ (function (_super) {
+    __extends(Test, _super);
+    function Test() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Test.prototype.render = function () {
+        return (React.createElement(\\"div\\", null, \\"aaa\\"));
+    };
+    Test.defaultProps = {
+        text: 'text',
+    };
+    return Test;
+}(React.PureComponent));
+export default Test;
+export var componentProps = [{ \\"description\\": \\"My name is Test\\", \\"displayName\\": \\"reactComponent\\", \\"props\\": { \\"visible\\": { \\"defaultValue\\": null, \\"description\\": \\"\`visible\\", \\"name\\": \\"visible\\", \\"required\\": true, \\"type\\": { \\"name\\": \\"boolean\\" } }, \\"text\\": { \\"defaultValue\\": { \\"value\\": \\"text\\" }, \\"description\\": \\"text\\", \\"name\\": \\"text\\", \\"required\\": false, \\"type\\": { \\"name\\": \\"string | undefined\\" } } } }];
+"
+`;

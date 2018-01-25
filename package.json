@@ -1,0 +1,45 @@
+{
+  "name": "export-ts-react-props-loader",
+  "version": "0.0.1",
+  "description": "export props doc from typescript source code generatered by react-docgen-typescript as a variable",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "test": "jest",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangtao0101/export-ts-react-props-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wangtao0101/export-ts-react-props-loader/issues"
+  },
+  "keywords": [
+    "webpack",
+    "javascript",
+    "typescript"
+  ],
+  "author": "wangtao0101",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.36",
+    "@babel/core": "7.0.0-beta.36",
+    "@babel/preset-env": "7.0.0-beta.36",
+    "@babel/preset-react": "7.0.0-beta.36",
+    "@types/react": "^16.0.35",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^22.1.0",
+    "babel-loader": "8.0.0-beta.0",
+    "jest": "^22.1.4",
+    "memory-fs": "^0.4.1",
+    "react": "^16.2.0",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "react-docgen-typescript": "^1.2.3",
+    "schema-utils": "^0.4.3",
+    "ts-loader": "^3.3.1",
+    "typescript": "^2.6.2"
+  }
+}
