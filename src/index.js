@@ -18,12 +18,21 @@ const schema = {
   }
 }
 
+const cacheParse = {};
+
 function getParse(resourcePath, configFile) {
+  let parse = cacheParse['parse'];
+  if (parse != null) {
+    return parse;
+  }
   const configFilePath = getConfig(resourcePath, configFile);
   if (configFilePath !== undefined) {
-    return require('react-docgen-typescript').withCustomConfig(configFilePath).parse;
+    parse = require('react-docgen-typescript').withCustomConfig(configFilePath).parse;
+  } else {
+    parse = require('react-docgen-typescript').withDefaultConfig().parse;
   }
-  return require('react-docgen-typescript').withDefaultConfig().parse;
+  cacheParse['parse'] = parse;
+  return parse;
 }
 
 export default function loader(source) {
